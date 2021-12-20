@@ -1,1 +1,70 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Cash Machine</title>
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-122873792-4"></script>
+    <script>
+        /*<![CDATA[*/
+        var clientConfig = {"id":0,"gameId":"CashMachine","platformId":"everi-demo","serverHost":"https:\/\/awsrgs.everi-interactive.com","operatorId":"everi-social-demo","gameType":"wager","clientType":"mobile","locale":"en_US","currencyCode":"USD","rgsVersion":"1.0.0","jurisdiction":"everi","version":"1.1.59-1","errorToken":"https:\/\/5bd0be4bbf694f708b3846505e8d3a2f@sentry.io\/1436189","analyticsId":"UA-122873792-4","userId":"","userToken":"701ec89f-2c38-4214-ac5c-9561167c3d98","codeHost":"https:\/\/rgs-code-assets.everi-interactive.com\/CashMachine\/1.1.59-1","cdnHost":"https:\/\/rgs-assets.everi-interactive.com\/CashMachine\/1.1.59-1","displayName":"Cash Machine","lobbyUrl":null,"splashImgSrc":"https:\/\/rgs-assets.everi-interactive.com\/CashMachine\/1.1.59-1\/splash.png","splashBackgroundColor":"#171717","splashBarColor":"#A444B1","splashShowInfo":true,"exclusions":[],"clientLaunch":null,"platformRecallRoundId":null,"rgsUser":null,"rgsSession":null,"launchDetails":{},"recall":null,"assets":[{"threshold":1600,"scalar":1.0,"url":"https:\/\/rgs-assets.everi-interactive.com\/CashMachine\/1.1.59-1\/res\/"},{"threshold":1280,"scalar":0.65,"url":"https:\/\/rgs-assets.everi-interactive.com\/CashMachine\/1.1.59-1\/mid-res\/"},{"threshold":1024,"scalar":0.5,"url":"https:\/\/rgs-assets.everi-interactive.com\/CashMachine\/1.1.59-1\/low-res\/"}],"clientconfig":{"client":{"servicePath":"\/gateway\/slot"}}};
+        /*]]>*/
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', clientConfig.analyticsId);
+    </script>
+    <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+
+    <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <!-- force webkit on 360 -->
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <!-- force edge on IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+
+    <!-- force full screen on some browser -->
+    <meta name="full-screen" content="yes"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+
+    <!-- force screen orientation on some browser -->
+    <meta name="screen-orientation" content=""/>
+    <meta name="x5-orientation" content=""/>
+
+    <!--fix fireball/issues/3568 -->
+    <!--<meta name="browsermode" content="application">-->
+    <meta name="x5-page-mode" content="app"/>
+
+    <!--<link rel="apple-touch-icon" href=".png" />-->
+    <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+    <link rel="stylesheet" type="text/css" href="https://rgs-code-assets.everi-interactive.com/CashMachine/1.1.59-1/style-mobile.css"/>
+</head>
+<body>
+    <div id="scroll-mask"><div id="mask-image-container"><img id="mask-image" src="https://rgs-assets.everi-interactive.com/CashMachine/1.1.59-1/swipe_up.gif" /></div></div>
+	<div id="click-target"></div>
+    <div id="content">
+        <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+        <div id="splash" style="background-color:#171717;">
+			<img id="splash-image" src="https://rgs-assets.everi-interactive.com/CashMachine/1.1.59-1/splash.png" style="margin-bottom:20px;" />
+            <div class="progress-bar stripes">
+                <span style="width: 0%;background-color:#A444B1;"></span>
+            </div>
+            <p class="splash-info">Cash Machine 1.1.59-1</p>
+        </div>
+    </div>
+
+    <script>
+        window.clientConfig = clientConfig;
+    </script>
+    <script src="https://rgs-code-assets.everi-interactive.com/CashMachine/1.1.59-1/src/settings.js" charset="utf-8"></script>
+    <script src="https://rgs-code-assets.everi-interactive.com/CashMachine/1.1.59-1/everi.min.js" charset="utf-8"></script>
+</body>
+</html>
